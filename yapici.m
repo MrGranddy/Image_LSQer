@@ -8,6 +8,7 @@ for krow = 1:sqSize
         coMatrix((krow - 1) * sqSize + kcol, 4) = power(krow, 3);
         coMatrix((krow - 1) * sqSize + kcol, 5) = power(krow, 2);
         coMatrix((krow - 1) * sqSize + kcol, 6) = krow;
+        coMatrix((krow - 1) * sqSize + kcol, 7) = 1;
      end
 end
 

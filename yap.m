@@ -10,7 +10,7 @@ for row = 1:floor(m/sqSize)
         end
     end
 end
-bs = zeros(6,(floor(m/sqSize))*(floor(n/sqSize)));
+bs = zeros(7,(floor(m/sqSize))*(floor(n/sqSize)));
 for row = 1:(floor(m/sqSize))
     for col = 1:(floor(n/sqSize))
         bs(:,(row-1) * floor(n/sqSize) + col) = lsqlin(co, as(:,(row-1)*floor(n/sqSize) + col));
